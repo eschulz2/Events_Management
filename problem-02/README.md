@@ -21,30 +21,24 @@ When you're done, you should be able to handle the [Behaviors](#behaviors) outli
 
 # <a id="behaviors"> Behaviors
 
-## Create a User
+## This is your driver code, make it run:
 
 ```ruby
+
+## Create a user
 user = User.new :name => "ed shadi", :email => "shadi@devbootcamp.com", :photo_name => "shadi", :photo_url => "http://awesome.com/shadi"
-```
 
 ## Create a Product
-
-```ruby
 product = Product.new :name => "laptop", :description => "macbook pro", :price => 1500, :photo_name => "macbook", :photo_url => "http://sweet.com/macbook"
-```
+
 
 ## Obtain information about a User
-
-```ruby
 user.name      # should return "ed shadi"
 user.email     # should return "shadi@devbootcamp.com"
 user.photo     # should return the photo
 user.photo.url # should return "http://sweet.com/macbook"
-```
 
 ## Obtain information about a Product
-
-```ruby
 product.name         # should return "laptop"
 product.description  # should return "macbook pro"
 product.price        # should return 1500
