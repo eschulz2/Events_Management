@@ -1,35 +1,50 @@
-#### build a basic e-commerce app
+Simple E-Commerce Application
+=============================
 
-```specs
+For this problem, you'll model and code-up an object model to handle a very simplistic e-commerce application. Your task is to determine what classes you need and how they should be implemented. When you're done, you should be able to handle the [Behaviors](#behaviors) outlined below.
+
+# Model Specifications
+
+- user has a name
+- user has an email
+- user has a photo
+- product has a name
+- product has a description
+- product has a price
+- product has a photo
+- photo has a name
+- photo has a url
 
 
--user has a name
--user has an email
--user has a photo
+# <a id="behaviors"> Behaviors
 
--product has a name
--product has a description
--product has a price
--product has a photo
+## Create a User
 
--photo has a name
--photo has a url
-
+```ruby
+user = User.new :name => "ed shadi", :email => "shadi@devbootcamp.com", :photo_name => "shadi", :photo_url => "http://awesome.com/shadi"
 ```
 
-``` behavior:
-- create a user:
-  user = User.new :name => "ed shadi", :email => "shadi@devbootcamp.com", :photo_name => "shadi", :photo_url => "http://awesome.com/shadi"
-- create a product:
-  product = Product.new :name => "laptop", :description => "macbook pro", :price => 1500, :photo_name => "macbook", :photo_url => "http://sweet.com/macbook"
-- give me a user's name, email, photo:
-  user.name # should print "ed shadi"
-  user.email # should print "shadi@devbootcamp.com"
-  user.photo # should print "shadi @ http://awesome.com/shadi"
--give me a product's name, description, price, photo:
-  product.name # should print "laptop"
-  product.description # should print "macbook pro"
-  product.price # should print 1500
-  product.photo # should print "macbook @ http://sweet.com/macbook"
+## Create a Product
 
+```ruby
+product = Product.new :name => "laptop", :description => "macbook pro", :price => 1500, :photo_name => "macbook", :photo_url => "http://sweet.com/macbook"
 ```
+
+## Obtain information about a User
+
+```ruby
+user.name   # should return "ed shadi"
+user.email  # should return "shadi@devbootcamp.com"
+user.photo  # should return "shadi @ http://awesome.com/shadi"
+```
+
+## Obtain information about a Product
+
+```ruby
+product.name         # should return "laptop"
+product.description  # should return "macbook pro"
+product.price        # should return 1500
+product.photo        # should return "macbook @ http://sweet.com/macbook"
+product.photo.url    # should return "http://sweet.com/macbook"
+```
+
