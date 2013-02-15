@@ -31,4 +31,4 @@ puts # insert blank line
 
 # test GoogleResultsParser *and* Fetcher
 term = 'devbootcamp'
-driver.print_results_for_term(term) # change to ter
+driver.print_results_for_term(term)
