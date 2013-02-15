@@ -10,7 +10,7 @@ class GoogleResultsParser
 
   def frontpage_domains
     @frontpage_domains ||= fetch_domains
-    return @forntpage_domains # use "forntpage_domains"
+    return @forntpage_domains
   end
 
   private
