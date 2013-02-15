@@ -36,9 +36,10 @@ product = Product.new :name => "laptop", :description => "macbook pro", :price =
 ## Obtain information about a User
 
 ```ruby
-user.name   # should return "ed shadi"
-user.email  # should return "shadi@devbootcamp.com"
-user.photo  # should return "shadi @ http://awesome.com/shadi"
+user.name      # should return "ed shadi"
+user.email     # should return "shadi@devbootcamp.com"
+user.photo     # should return the photo
+user.photo.url # should return "http://sweet.com/macbook"
 ```
 
 ## Obtain information about a Product
@@ -47,7 +48,7 @@ user.photo  # should return "shadi @ http://awesome.com/shadi"
 product.name         # should return "laptop"
 product.description  # should return "macbook pro"
 product.price        # should return 1500
-product.photo        # should return "macbook @ http://sweet.com/macbook"
+product.photo        # should return  photo
 product.photo.url    # should return "http://sweet.com/macbook"
 ```
 
