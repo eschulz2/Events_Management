@@ -22,7 +22,7 @@ After that, run the code, and then:
 To run the code:
 
 ```bash
-$ ruby driver.rb  # the 'bundle exec' makes sure the gems are loaded
+$ bundle exec ruby driver.rb  # the 'bundle exec' makes sure the gems are loaded
 ```
 
 **NOTE:** The first two errors in the code should be fairly straight-forward to debug. The third error may be a bit less obvious. If you get stuck, **move on**.
