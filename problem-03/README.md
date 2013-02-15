@@ -14,24 +14,19 @@ As with problem 2, when you're done, you should be able to handle the [Behaviors
 
 # <a id="behaviors"> Behaviors
 
-## Add a Product to a User's Cart
+## ## This is your driver code, make it run
 
 ```ruby
+# Add a Product to a User's Cart
 user = User.new :name => "ed shadi", :email => "shadi@devbootcamp.com", :photo_name => "shadi", :photo_url => "http://awesome.com/shadi"
 product = Product.new :name => "laptop", :description => "macbook pro", :price => 1500, :photo_name => "macbook", :photo_url => "http://sweet.com/macbook"
 user.add_to_cart(product)
 user.cart.first.to_s  # returns "laptop macbook pro"
-```
 
-## Count the Products in a User's Cart
-
-```ruby
+# Count the Products in a User's Cart
 user.cart.count  # returns 1
-```
 
-## Empty a User's Cart
-
-```ruby
+# Empty a User's Cart
 user.empty_cart
 user.cart.count  # returns 0
 user.cart        # returns []
