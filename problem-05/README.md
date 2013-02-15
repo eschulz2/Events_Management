@@ -17,3 +17,5 @@ Also, be sure you use ```bundle exec` when running the code:
 ```bash
 $ ruby <your driver program>.rb  # the 'bundle exec' makes sure the gems are loaded
 ```
+
+**NOTE:** We understand that this material is all very new and that this problem may be a struggle for you. Just do your best, implement as much as you can, and you'll have a chance to work through more of it while pairing with your interviewer.

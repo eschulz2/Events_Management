@@ -25,3 +25,4 @@ To run the code:
 $ ruby driver.rb  # the 'bundle exec' makes sure the gems are loaded
 ```
 
+**NOTE:** The first two errors in the code should be fairly straight-forward to debug. The third error may be a bit less obvious. If you get stuck, **move on**.
