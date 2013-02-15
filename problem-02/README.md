@@ -1,7 +1,10 @@
 Simple E-Commerce Application
 =============================
 
-For this problem, you'll model and code-up an object model to handle a very simplistic e-commerce application. Your task is to determine what classes you need and how they should be implemented. When you're done, you should be able to handle the [Behaviors](#behaviors) outlined below.
+For this problem, you'll model and code-up an object model to handle a very simplistic e-commerce application. Your task is to determine what classes you need and how they should be implemented.
+
+When you're done, you should be able to handle the [Behaviors](#behaviors) outlined below.
+
 
 # Model Specifications
 

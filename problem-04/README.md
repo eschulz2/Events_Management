@@ -1,23 +1,38 @@
-#### continue building the e-commerce app, add the following functionality:
+Simple E-Commerce Application, Revisited
+========================================
 
-```specs
+For this problem, you're going to add some functionality to the simple e-commerce application from problem 2. Specifically, you'll be adding shopping cart functionality.
 
--user has one shopping cart
--shopping cart has many products
+As with problem 2, when you're done, you should be able to handle the [Behaviors](#behaviors) outlined below.
 
 
+# Model Specifications
+
+- user has one shopping cart
+- shopping cart has many products
+
+
+# <a id="behaviors"> Behaviors
+
+## Add a Product to a User's Cart
+
+```ruby
+user = User.new :name => "ed shadi", :email => "shadi@devbootcamp.com", :photo_name => "shadi", :photo_url => "http://awesome.com/shadi"
+product = Product.new :name => "laptop", :description => "macbook pro", :price => 1500, :photo_name => "macbook", :photo_url => "http://sweet.com/macbook"
+user.add_to_cart(product)
+user.cart.first.to_s  # returns "laptop macbook pro"
 ```
 
-```expected features:
--add a product to a user's cart
-  user = User.new :name => "ed shadi", :email => "shadi@devbootcamp.com", :photo_name => "shadi", :photo_url => "http://awesome.com/shadi"
-  product = Product.new :name => "laptop", :description => "macbook pro", :price => 1500, :photo_name => "macbook", :photo_url => "http://sweet.com/macbook"
-  user.add_to_cart(product) # prints "laptop macbook pro"
--give me the count of products in a user's cart
-  user.cart.count # prints 1
--empty a user's cart
-  user.empty_cart
-  user.cart.count # prints 0
-  user.cart # prints "no products"
+## Count the Products in a User's Cart
 
+```ruby
+user.cart.count  # returns 1
+```
+
+## Empty a User's Cart
+
+```ruby
+user.empty_cart
+user.cart.count  # returns 0
+user.cart        # returns []
 ```
