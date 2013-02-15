@@ -10,7 +10,7 @@ Software has bugs (surprise, surprise). By now you should be familiar with error
 In this folder, you'll find some code. The code, however, is currently non-functional. That is, it has errors. You need to find and fix the errors. You should start by installing the required gems:
 
 ```bash
-$ bundle install
+$ bundle install  # this will install the required gems
 ```
 
 After that, run the code, and then:
@@ -22,6 +22,6 @@ After that, run the code, and then:
 To run the code:
 
 ```bash
-$ ruby driver.rb
+$ ruby driver.rb  # the 'bundle exec' makes sure the gems are loaded
 ```
 
