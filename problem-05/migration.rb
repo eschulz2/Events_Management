@@ -10,12 +10,9 @@ module Migrate
 
   def self.drop
     # HINT: what's the opposite of "CREATE TABLE" in SQL?
-    ActiveRecord::Migration.drop_table :students
   end
 
   def self.recreate
-    self.drop if ActiveRecord::Base.connection.table_exists? :students
-    self.create
   end
 
 end
