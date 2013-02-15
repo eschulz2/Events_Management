@@ -36,7 +36,7 @@ product = Product.new :name => "laptop", :description => "macbook pro", :price =
 user.name      # should return "ed shadi"
 user.email     # should return "shadi@devbootcamp.com"
 user.photo     # should return the photo
-user.photo.url # should return "http://sweet.com/macbook"
+user.photo.url # should return "http://awesome.com/shadi"
 
 ## Obtain information about a Product
 product.name         # should return "laptop"
