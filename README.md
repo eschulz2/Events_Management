@@ -9,6 +9,12 @@ We suggest that you read through all of the problems first before starting on an
 
 There are 4 different problems. You'll be working for about 40 minutes on your own, after which point your interviewer will sit and pair with you for the last 15 minutes. Again -- work on what you know first.
 
+```bash
+$ git clone https://github.com/Devbootcamp/phase-1-assessment.git
+```
+
+**NOTE:** Other than to ```clone``` the repository you do NOT need to commit any code using ```git```. Simply work on your solutions in the cloned repository on the computer you're working on. Then, your interviewer will review it with you. Please note also, that **after the interview is over, you should delete your code**.
+
 **NOTE:** Simply work on your solutions on the computer you're working on. Then, your interviewer will review it with you. Please note also, that **after the interview is over, you should delete your code**.
 
 **Good luck!**
