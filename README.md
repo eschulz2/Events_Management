@@ -9,6 +9,8 @@ We suggest that you read through all of the problems first before starting on an
 
 There are 4 different problems. You'll be working for about 40 minutes on your own, after which point your interviewer will sit and pair with you for the last 15 minutes. Again -- work on what you know first.
 
+To get started, clone the repository and then solve whichever problems you can:
+
 ```bash
 $ git clone https://github.com/Devbootcamp/phase-1-assessment.git
 ```
