@@ -9,6 +9,8 @@ We suggest that you read through all of the problems first before starting on an
 
 There are 4 different problems. You'll be working for about 40 minutes on your own, after which point your interviewer will sit and pair with you for the last 15 minutes. Again -- work on what you know first.
 
+It's likely you won't be able to finish all the problems.  That's fine and normal.  The priority is to have substantial enough code to talk about afterwards.  It's only a problem if you get stuck and don't move on.  We can have a good conversation about a half-completed application, too. :)
+
 To get started, clone the repository and then solve whichever problems you can:
 
 ```bash
