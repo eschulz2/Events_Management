@@ -12,7 +12,7 @@ There are 4 different problems. You'll be working for about 40 minutes on your o
 To get started, clone the repository and then solve whichever problems you can:
 
 ```bash
-$ git clone https://github.com/Devbootcamp/phase-1-assessment.git
+$ git clone https://github.com/Devbootcamp/phase-2-assessment.git
 ```
 
 **NOTE:** Other than to ```clone``` the repository you do NOT need to commit any code using ```git```. Simply work on your solutions in the cloned repository on the computer you're working on. Then, your interviewer will review it with you. Please note also, that **after the interview is over, you should delete your code**.
