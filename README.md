@@ -1,22 +1,71 @@
-Phase 2 Assessment
-==================
+# Events Management Application
 
-Hello again!  We have designed 4 challenges for you that will assess what you've been learning over the past three weeks during Phase 2 of Dev Bootcamp.
+We're going full [CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) and building a simple event-management application.
 
-You'll have about 55 minutes to work through all 4 problems.
+## Objectives
 
-We suggest that you read through all of the problems first before starting on any of them. If you don't know how to solve one of them, or if you get stuck, simply move on to the next one. Don't waste time spinning your wheels -- **move on and just get as much done as possible**.
+### Authentication
 
-There are 4 different problems. You'll be working for about 40 minutes on your own, after which point your interviewer will sit and pair with you for the last 15 minutes. Again -- work on what you know first.
+By now you should be familiar with basic sinatra apps and creating simple websites.  This problem will give you a chance to demonstrate your proficiency with the web by writing code for controllers, authentication, views, and basic HTML forms with a little bit of CSS.
 
-It's likely you won't be able to finish all the problems.  That's fine and normal.  The priority is to have substantial enough code to talk about afterwards.  It's only a problem if you get stuck and don't move on.  We can have a good conversation about a half-completed application, too. :)
+Authentication is a central concern of most web applications.  We're going to start by creating a simple app that does nothing more than authenticate a user.
 
-To get started, clone the repository and then solve whichever problems you can:
 
-```bash
-$ git clone https://github.com/Devbootcamp/phase-2-assessment.git
+#### User Model
+
+You have an empty `User` model and a database with a `users` table.  Add validations to the `User` model which guarantee the following:
+
+1. Every user has an email
+2. Every user's email is unique
+3. Every email looks like *@*.*
+4. Every user has a password
+
+You should not store the user's password directly in the database.
+
+#### Sign Up, Log In, Log Out
+
+1. Sign up as a new user
+2. Log in as an existing user
+3. Log out as an existing user
+
+### Eevents
+We have users and events.  Users can attend many events and an event can be attended by many users.  Events are user-created, too, so an event belongs to a user and a user can create multiple events.
+
+#### Associations
+
+We've already defined the three models for you.  Create the correct associations between them.
+
+The `User` model should have three associations on it.  Given a user, make it so that
+
+```ruby
+user.created_events
 ```
 
-**NOTE:** Other than to ```clone``` the repository you do NOT need to commit any code using ```git```. Simply work on your solutions in the cloned repository on the computer you're working on. Then, your interviewer will review it with you. Please note also, that **after the interview is over, you should delete your code**.
+returns the list of events created by `user` and
 
-**Good luck!**
+```ruby
+user.attended_events
+```
+
+returns the list of events `user` is attending or has attended.
+
+You'll need to use the `:class_name` argument to specify the associated class for the `created_events` and `attended_events` associations, like so:
+
+```ruby
+class User < ActiveRecord::Base
+  has_many :created_events,
+           :class_name => 'Event'
+end
+```
+
+ActiveRecord normally tries to guess the class name from the association name.  In this case, because the association is called `events_created`, ActiveRecord would try guess that `CreatedEvent` is the class name.  There's no such class and ActiveRecord would raise an exception.
+
+Search for "class_name" in [A Guide to Active Record Associations](http://guides.rubyonrails.org/association_basics.html) to see other examples.
+
+### CRUD It Up
+
+With user authentication in place, create pages which lets the user see their created events, show, edit, and destroy events.
+
+### Ajaxify it
+On the user's events page, where we list all of the events created by the user, add the new event form on that page and ajaxify it. Meaning, when a user adds a new event,
+without refreshing the page, we want to append that event to the list of created event.
