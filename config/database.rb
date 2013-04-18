@@ -13,7 +13,7 @@ Dir[APP_ROOT.join('app', 'models', '*.rb')].each do |model_file|
   autoload ActiveSupport::Inflector.camelize(filename), model_file
 end
 
-DB_NAME = 'db/sqlite3.db'
+DB_NAME = APP_ROOT.join('db', 'events.sqlite3').to_s
 
 ActiveRecord::Base.establish_connection(
   :adapter  => 'sqlite3',
