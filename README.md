@@ -61,7 +61,7 @@ end
 
 ActiveRecord normally tries to guess the class name from the association name.  In this case, because the association is called `created_events`, ActiveRecord would try guess that `CreatedEvent` is the class name.  There's no such class and ActiveRecord would raise an exception.
 
-Search for "class_name" in [A Guide to Active Record Associations](http://guides.rubyonrails.org/association_basics.html) to see other examples.
+Search for "class_name" in [A Guide to Active Record Associations](http://guides.rubyonrails.org/association_basics.html)  and "source" in [Active Record Associations : has_many](http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#method-i-has_many)to see other examples. 
 
 ### CRUD It Up
 
