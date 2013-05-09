@@ -1,11 +1,11 @@
 # Events Management Application
-By now you should be familiar with basic sinatra apps and creating simple websites.  This problem will give you a chance to demonstrate your proficiency with the web by writing code for controllers, authentication, views, and basic HTML forms with a little bit of CSS.
+By now you should be familiar with basic sinatra apps and creating simple websites.  This problem will give you a chance to demonstrate your proficiency with the web by writing code for controllers, authentication, views, and basic HTML forms with a little bit of CSS. We're going full [CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) and building a simple event-management application.
 
-We're going full [CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) and building a simple event-management application.
+The problem is broken into 4 parts.  You will need to complete each part to move on. We've given approximate timing for each part.  If you find you are taking a lot longer be sure to ask questions.  
 
 ## Objectives
 
-### Authentication
+### Part 1: Authentication (Timing ~ 30 min)
 
 Authentication is a central concern of most web applications.  We're going to start by creating a simple app that does nothing more than authenticate a user.
 
@@ -29,7 +29,7 @@ Create views to allow a user to:
 2. Log in as an existing user
 3. Log out as an existing user
 
-### Events
+### Part 2: Events  (Timing ~ 30 min)
 We have users and events.  Users can attend many events and an event can be attended by many users.  Events are user-created, too, so an event belongs to a user and a user can create multiple events.
 
 #### Associations
@@ -63,9 +63,9 @@ ActiveRecord normally tries to guess the class name from the association name.  
 
 Search for "class_name" in [A Guide to Active Record Associations](http://guides.rubyonrails.org/association_basics.html)  and "source" in [Active Record Associations : has_many](http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#method-i-has_many)to see other examples. 
 
-### CRUD It Up
+### Part 3: CRUD It Up (Timing ~ 45 min)
 
 With user authentication in place, create pages which let the user create new events, show their created events, edit events, and destroy events.
 
-### AJAXify it
+### Part 4: AJAXify it (Timing ~ 30 min)
 On the page that lists all the events created by the user, add the form for creating a new event.  Use AJAX on this form so that when a user adds a new event, that new event is appended to the list of created events without refreshing the page.
