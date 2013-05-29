@@ -1,2 +1,2 @@
-class EventUser < ActiveRecord::Base
+class EventAttendance < ActiveRecord::Base
 end
