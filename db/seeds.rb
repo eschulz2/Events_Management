@@ -3,15 +3,15 @@ require 'faker'
 User.delete_all
 Event.delete_all
 
-# Create 5,000 users
-users = 5000.times.map do
+# Create 500 users
+users = 500.times.map do
   User.create :first_name => Faker::Name.first_name,
               :last_name  => Faker::Name.last_name,
               :email      => Faker::Internet.email,
               :birthdate  => Date.today - 15.years - rand(20000).days
 end
 
-1000.times do
+100.times do
   start_time = Time.now + (rand(61) - 30).days
   end_time   = start_time + (1 + rand(6)).hours
 
