@@ -12,6 +12,7 @@ gem 'thin'
 
 gem 'activesupport'
 gem 'activerecord'
+gem 'shotgun'
 
 gem 'rake'
 
