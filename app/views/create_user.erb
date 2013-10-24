@@ -1,0 +1,17 @@
+<div class="page_container">
+  <h1>New User</h1>
+  <form action='/create_user' method ="POST">
+  	<input type="text" name="user[first_name]" placeholder="first name"><br><br>
+  	<input type="text" name="user[last_name]" placeholder="last name"><br><br>
+    <input type="email" name="user[email]" placeholder="email"><br><br>
+    <input type="text" name="user[birthdate]" placeholder="birthdate"><br><br>
+    <input type="password" name="user[password]" placeholder="password"><br><br>
+    <input type="password" name="user[password_confirmation]" placeholder="password (confirm)"><br><br>
+    <input type="submit" value="Create User">
+  </form>
+  <% if @error%>
+    <p id="error"><%= @error %></p>
+  <% end %>
+</div>
+
+<!-- <input action="text" name="user[first_name]" placeholder="first name"> -->

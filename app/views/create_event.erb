@@ -1,0 +1,15 @@
+<div class="page_container">
+  <h1>Create Event</h1>
+  <form id="make" action='/create_event' method ="POST">
+  	<input id="name" type="text" name="event[name]" placeholder="event name"><br><br>
+    <input id="location" type="text" name="event[location]" placeholder="location"><br><br>
+    <input id="starts_at" type="text" name="event[starts_at]" placeholder="start date/time"><br><br>
+    <input id="ends_at" type="text" name="event[ends_at]" placeholder="end date/time"><br><br>
+    <input id="create_event_button" type="submit" value="Create Event">
+  </form>
+ 
+  <% if @error%>
+    <p id="error"><%= @error %></p>
+  <% end %>
+</div>
+

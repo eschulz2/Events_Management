@@ -2,8 +2,19 @@
     margin: 20px auto;
     width: 600px;
     padding: 0px 20px 20px 20px;
-    border: 1px dotted black;
+/*    border: 1px dotted black;*/
+
   }
   th {
     text-align: left;
   }
+
+ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+	background-color: orange;
+
+}

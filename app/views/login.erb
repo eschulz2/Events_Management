@@ -1,0 +1,12 @@
+<div class="page_container">
+  <h1>Login</h1>
+  <form action='/login' method ="POST">
+    <input type="email" name="user[email]" placeholder="email" required><br><br>
+    <input type="password" name="user[password]" placeholder="password" required><br><br>
+    <input type="submit" value="Login">
+  </form>
+  <% if @error%>
+    <p id="error"><%= @error %></p>
+  <% end %>
+</div>
+

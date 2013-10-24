@@ -8,10 +8,17 @@
   -->
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/application.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
+  <script src="/js/application.js"></script>
 
   <title></title>
+  <header><%= erb :_nav %></header>
 </head>
-<body>
-  <%= yield %>
-</body>
+<div class="container">  
+  <body>
+
+    <%= yield %>
+
+  </body>
+</div>
 </html>

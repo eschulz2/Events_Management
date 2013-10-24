@@ -1,0 +1,11 @@
+	<a class="app_name" href="/">Event Planner</a>
+<ul>  
+    <% if logged_in? %>
+    <li><a href="/create_event">Create Event</a></li>
+    <li><a href="/logout">Logout</a></li>
+    <li><a href="/user/<%= current_user.id %>/events"><%=current_user.email %> Events</a></li>
+	  <% else %>
+	    <li><a href="/login">Login</a></li>
+	    <li><a  href="/create_user">Register</a></li>
+	  <% end %>
+</ul>

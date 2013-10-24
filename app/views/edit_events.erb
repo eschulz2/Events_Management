@@ -1,0 +1,21 @@
+<div class="page_container">
+  <h1>Edit Event</h1>
+  <form action='/event/<%= @event.id %>/edit' method ="POST">
+  	<input id="name" type="text" name="event[name]" placeholder="event name" value="<%= @event.name %>"><br><br>
+    <input id="location" type="text" name="event[location]" placeholder="location" value="<%= @event.location %>"><br><br>
+    <input id="starts_at" type="text" name="event[starts_at]" placeholder="start date/time" value="<%= @event.starts_at %>"><br><br>
+    <input id="ends_at" type="text" name="event[ends_at]" placeholder="end date/time" value="<%= @event.ends_at  %>"><br><br>
+    <input type="submit" value="Update Event">
+    <% if @error%>
+    <p id="error"><%= @error %></p>
+  <% end %>
+  </form>
+  <br>
+  <br>
+  <form action='/event/<%= @event.id %>/delete' method ="POST">
+    <input type="submit" value="Delete Event">
+  </form>
+  <% if @error%>
+    <p id="error"><%= @error %></p>
+  <% end %>
+</div>

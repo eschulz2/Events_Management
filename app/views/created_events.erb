@@ -1,0 +1,10 @@
+<h1>Your Events</h1>
+    <ul id="event_list" class="event_list">
+      <% @created_events.each do |event|%> 
+      <li><a class="event_links" href="/event/<%= event.id %>/edit"><%= event.name %>  |   <%= event.location %>  |  <%= event.starts_at %></a></li>
+      <% end %>
+      <br>
+      <br>
+      <%= erb :create_event %>
+    </ul>
+    
